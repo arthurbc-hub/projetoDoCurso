@@ -55,19 +55,16 @@ form {
 button{
     width:100%;
     padding:10px;
-    backgroud-color:var(--sucess);
+    background-color:var(--success);
     border:none;
     border-radius: 5px;
     color:var(--white);
-    front-size:15px;
-    font-weight: 15px;
-    cursr:pointer;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
     transition:0.3s;
-    
 }
+
 button:hover{
     background-color: var(--success-hover);
-}
-@media(min-width:300px){
-    
 }
