@@ -35,7 +35,7 @@ nav a:hover{
 .container{
     background-color: var(--white);
     padding:30px;
-    border-radius: 10px;
+    border-radius: 10px;    
     box-shadow: 0 4px 8px var(--shadow-default);
     width:100%;
     max-width: 1100px;
