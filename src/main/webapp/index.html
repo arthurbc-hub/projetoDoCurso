@@ -2,24 +2,28 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/reset.css"/>
-        <link rel="stylesheet" href="css/color.css"/>
-        <link rel="stylesheet" href="css/login.css"/>
-        <title>Sistema de estoque</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/color.css"/> 
+        <link rel="stylesheet" href="css/Login.css"/>
+        <title>Sistema de Estoque</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <form action="login" method="post">
             <div class="container">
                 <h1>Login</h1>
+
                 <div>
-                    <label>Usuário</label>
-                    <input type="text" name="users" class="inputUser"/>
+                    <label for="users">Usuário</label>
+                    <input type="text" id="users" name="users" class="inputUser"/>
                 </div>
+
                 <div>
-                    <label>Senha</label>
-                    <input type="password" name="passw" class="inputPassword"/>
+                    <label for="passw">Senha</label>
+                    <input type="password" id="passw" name="passw" class="inputPassword"/>
                 </div>
-                    <button type="submit">Entrar</button>
+
+                <button type="submit">Entrar</button>
             </div>
         </form>
     </body>

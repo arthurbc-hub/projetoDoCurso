@@ -25,7 +25,7 @@ public class ConnectionFactory {
                 Class.forName(DRIVER);
                 con = DriverManager.getConnection(URL, USER, PASSWORD);
                 System.out.println("Banco de dados conectado.");
-            } catch (Exception e) {
+             } catch (Exception e) {
                 System.out.println("Banco de dados não conectado");
                 e.printStackTrace();
             }

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
     <head>
         <link rel="stylesheet" href="../css/reset.css"/>
@@ -17,15 +13,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <h1 id="tituloDashboard">Sistema de Estoque</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Início</a></li>
                     <li><a href="#">Gerenciamento</a></li>
                 </ul>
             </nav>
-            <img src="scr" alt="alt"/>
+           
         </header>  
+
         <main>
             <section id="resumoEstoque">
-                <div >
+                <div>
                     <h2>Entrada</h2>
                     <p>100</p>
                 </div>
@@ -38,27 +35,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     <p>20</p>
                 </div>
             </section>
-            <<section>
+
+            <!-- FILTROS -->
+            <section class="filtros">
                 <div>
-                    <label>Data</label>
-                    <input type="date" >
+                    <label for="data">Data</label>
+                    <input type="date" id="data">
                 </div>
+
                 <div>
-                    <label>Tipo</label>
-                    <select>
-                        <option>Selecione uma opção</option>
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                        <option disabled selected>Selecione uma opção</option>
                         <option>Entrada</option>
                         <option>Saída</option>
                     </select>
                 </div>
+
                 <div class="grupo-filtro pesquisar-nome">
                     <label for="pesquisarNome">Pesquisar item</label>
-                    <input type="text" placeholder="Digite o nome do produto">
+                    <input type="text" id="pesquisarNome" placeholder="Digite o nome do produto">
                 </div>
+
                 <div class="grupo-filtro botao-pesquisa">
-                    <button id="btnPesquisar">Pesquisar</button>
+                    <button type="button" id="btnPesquisar">Pesquisar</button>
                 </div>
             </section>
+
+            <!-- TABELA -->
             <section>
                 <div>
                     <table>
@@ -83,8 +87,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                                 <td>R$150,00</td>
                                 <td>R$2.250,00</td>
                             </tr>
-                        </tbody>
-                        <tbody>
                             <tr>
                                 <td>987654321</td>
                                 <td>Teclado</td>
@@ -98,22 +100,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     </table>
                 </div>
             </section>
-            <section>
-                <div>
-                    <label>Pagina</label>
-                    <select>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                </div>
-                <div>
-                    <button>Voltar</button>
-                    <button>Próximo</button>
-                </div>
-            </section>
+
+            <!-- PAGINAÇÃO -->
+            <footer>
+                <section>
+                    <div>
+                        <label for="pagina">Página</label>
+                        <select id="pagina">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="button">Voltar</button>
+                        <button type="button">Próximo</button>
+                    </div>
+                </section>
+            </footer>
+
         </main>
     </body>
 </html>
-<!-- ola __> 
