@@ -27,7 +27,6 @@ public class CadastrosUsersDAO {
             stmt.setString(9, user.getEmail());
             stmt.setString(10, user.getTelefone());
             stmt.setString(11, user.getFuncao());
-            // CORRIGIDO: era setLong, agora setString (cep e numero são VARCHAR no banco)
             stmt.setString(12, user.getCep());
             stmt.setString(13, user.getEndereco());
             stmt.setString(14, user.getNumero());

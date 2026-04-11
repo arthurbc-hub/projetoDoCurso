@@ -11,7 +11,6 @@ public class CadastroUsuarioModel {
     private String dtaNascimento;
     private String email;
     private String telefone;
-    // CORRIGIDO: era long, agora String (VARCHAR no banco)
     private String cep;
     private String endereco;
     private String estado;

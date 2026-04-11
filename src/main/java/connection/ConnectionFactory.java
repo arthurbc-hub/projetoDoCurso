@@ -6,9 +6,8 @@ import java.sql.DriverManager;
 public class ConnectionFactory {
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    // CORRIGIDO: era "estoque_db", banco criado se chama "SistemaDeEstoque"
     private static final String URL =
-        "jdbc:mysql://db:3306/SistemaDeEstoque?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+        "jdbc:mysql://db:3306/estoque_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String USER = "root";
     private static final String PASSWORD = "cimatec";
 

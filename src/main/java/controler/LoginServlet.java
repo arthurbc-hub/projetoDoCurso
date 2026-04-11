@@ -30,7 +30,6 @@ public class LoginServlet extends HttpServlet {
         if (dao.validarLogin(userModel)) {
             HttpSession session = request.getSession();
             session.setAttribute("usuario", usuario);
-            // CORRIGIDO: era "/pages/dashboard.html" (caminho absoluto quebrado)
             response.sendRedirect(request.getContextPath() + "/pages/dashboard.html");
         } else {
             response.sendRedirect(request.getContextPath() + "/index.html");

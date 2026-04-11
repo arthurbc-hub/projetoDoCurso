@@ -1,4 +1,4 @@
-USE SistemaDeEstoque;
+USE estoque_db;
 
 CREATE TABLE IF NOT EXISTS users (
     id            INT AUTO_INCREMENT PRIMARY KEY,
@@ -20,4 +20,13 @@ CREATE TABLE IF NOT EXISTS users (
     cidade        VARCHAR(100),
     estado        VARCHAR(2),
     complemento   VARCHAR(200)
+);
+INSERT INTO users (
+    username, psw, nameFirst, sobrenome, matricula, cpf,
+    sexo, dtaNascimento, email, telefone, funcao,
+    cep, endereco, numero, bairro, cidade, estado, complemento
+) VALUES (
+    'admin', '1234', 'Admin', 'Sistema', '0001', '000.000.000-00',
+    'Masculino', '1990-01-01', 'admin@email.com', '71999999999', 'Administrador',
+    '40000-000', 'Rua Exemplo', '123', 'Centro', 'Salvador', 'BA', 'N/A'
 );
