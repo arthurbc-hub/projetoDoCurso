@@ -18,7 +18,7 @@ import model.CadastroProdutoModel;
  * @author 232.999257
  */
 @WebServlet("/cadastroProdutos")
-public class CadastroProdutosController extends HttpServlet{
+public class    CadastroProdutosController extends HttpServlet{
 
     public void doPost(HttpServletRequest request,HttpServletResponse response )
         throws ServletException,IOException{
@@ -32,15 +32,14 @@ public class CadastroProdutosController extends HttpServlet{
         produto.setQuantidade(Long.parseLong(request.getParameter("quantidade")));
         produto.setValor(request.getParameter("valor"));
         produto.setTotal(request.getParameter("total"));
+        produto.setStatus(request.getParameter("status"));
         
          CadastroProdutoDAO dao = new  CadastroProdutoDAO();
          
          if(dao.salvar(produto)){
-             response.sendRedirect("/pages/dashboard.html");
-    
+             response.sendRedirect(request.getContextPath() + "/pages/dashboard.html");
          }else{
-             response.sendRedirect("pages/cadastroProdutos");
+             response.sendRedirect(request.getContextPath() + "/pages/cadastroProdutos.html");
          }
-    }
     }
 }
